@@ -1,6 +1,8 @@
 import {
   faEnvelopeOpen,
   faLocationDot,
+  faMap,
+  faMapLocationDot,
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -61,7 +63,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="my-4">
+      <section className="mt-12 mb-4">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3270.3021327901843!2d50.114856675423134!3d26.433893176935847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI2JzAyLjAiTiA1MMKwMDcnMDIuOCJF!5e1!3m2!1sen!2sin!4v1740671361069!5m2!1sen!2sin"
           width="100%"

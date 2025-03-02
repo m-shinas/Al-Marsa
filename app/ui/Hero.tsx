@@ -11,15 +11,7 @@ const Hero = () => (
     <Suspense fallback={<FontAwesomeIcon icon={faSpinner} spinPulse color="#fff" size="4x"/>}>
       <VideoComponent fileName="al-marsa-hero-NjgB5KXyQ4vcJkVSTJWMiYOPyn1Fjo.mp4" />
     </Suspense>
-    {/* <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="absolute w-full h-full object-cover -z-[1] "
-    >
-      <source src="/al-marsa-hero.mp4" type="video/mp4" />
-    </video> */}
+    
     <div className="text-center">
       <Image
         src="/AL MARSA-white_combined.png"

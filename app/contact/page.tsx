@@ -11,14 +11,14 @@ export default function Page() {
   return (
     <main>
       <section className="h-[60vh] bg-hero bg-no-repeat bg-cover bg-bottom flex flex-col justify-center items-center text-center text-white">
-        <h1 className="text-5xl uppercase py-2 tracking-[4px]">Contact</h1>
+        <h1 className="text-5xl uppercase py-2 tracking-[2px]">Contact</h1>
       </section>
       <section className="max-w-[1320px] my-0 mx-auto py-0 px-4 text-center">
         <span className="text-4xl font-semibold py-4 relative top-12 bg-white ">
           Get in Touch with Us
         </span>
         <div
-          className={`${ubuntu_sans.className} flex justify-around items-center text-center my-8 mx-0 py-8 px-0 rounded-[20px] shadow-3xl`}
+          className={`${ubuntu_sans.className} flex max-lg:flex-col justify-around items-center text-center my-8 mx-0 py-8 px-0 rounded-[20px] shadow-3xl`}
         >
           <div className="my-3 mx-0 p-4">
             <span className="block">

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="padding py- flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
+      <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
         <div className="flex flex-1 flex-col">
           <h2 className="text-5xl capitalize font-bold lg:max-w-lg">
             Seamless <span className="text-fruit-salad-600">Shipping,</span> <br />
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       <section className="bg-snow-flurry padding-x py-10">
         <h2 className="text-center text-5xl font-bold">
-          Personalised Transportation Freight Forwarding
+          Customs Clearance & Transportation Services
         </h2>
         <p className={`${ubuntu_sans.className} info-text m-auto mt-4 max-w-lg text-center`}>
           Our diverse portfolio of services ensures that we can tailor solutions to 

@@ -2,7 +2,6 @@ import { list } from "@vercel/blob";
 
 async function VideoComponent({ fileName }: { fileName: string }) {
   const { blobs } = await list({
-    token: process.env.BLOB_READ_WRITE_TOKEN,
     prefix: fileName,
     limit: 1,
   });

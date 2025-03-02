@@ -7,7 +7,7 @@ import { Suspense } from "react";
 const Hero = () => (
   <div className="relative w-full h-screen bg-gradient-to-b from-[#0c0333]/30 to-[#0c0333]/30 py-0 px-[5%] flex items-center justify-center">
     <Suspense fallback={<p>Loading video...</p>}>
-      <VideoComponent fileName="al-marsa-hero.mp4" />
+      <VideoComponent fileName="al-marsa-hero-NjgB5KXyQ4vcJkVSTJWMiYOPyn1Fjo.mp4" />
     </Suspense>
     {/* <video
       autoPlay

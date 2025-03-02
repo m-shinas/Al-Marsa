@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .notch {
+    @apply relative w-[25%] bg-white flex justify-center rounded-bl-[50px] rounded-br-[50px] z-[10] before:content-[''] before:absolute before:w-[50px] before:h-[50px] before:bg-transparent before:top-0 before:left-[-50px] before:rounded-tr-[50px] before:shadow-[15px_-15px_0_15px_#fff] after:content-[''] after:absolute after:w-[50px] after:h-[50px] after:bg-transparent after:top-0 after:right-[-50px] after:rounded-tl-[50px] after:shadow-[-15px_-15px_0_15px_#fff];
+  }
+
+  .max-container {
+    max-width: 1440px;
+  }
+}
+
+@layer utilities {
+
+  .padding {
+    @apply sm:px-16 px-8 sm:py-16 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply  text-slate-gray text-lg leading-7;
+  }
+}
+
+/* --pigment-green: #1D9948ff;
+--dark-pastel-green: #41B649ff;
+--yellow-green: #81C341ff;
+--davys-gray: #4F4C4Dff;
+--gray: #7C7C7Dff; 
+
+*/

@@ -7,7 +7,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-let presentYear: number = new Date().getFullYear();
+const presentYear: number = new Date().getFullYear();
 
 const Footer = () => (
   <footer className="w-full bg-[#242323]">

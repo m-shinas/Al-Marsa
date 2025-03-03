@@ -1,8 +1,6 @@
 import {
   faEnvelopeOpen,
   faLocationDot,
-  faMap,
-  faMapLocationDot,
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -65,7 +65,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
-                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-lima-400 underline underline-offset-4' : pathname === '/'})}
+                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-malachite underline underline-offset-4' : pathname === '/'})}
               >
                 Home
               </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/services"
-                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-lima-400 underline underline-offset-4': pathname === '/services'})}
+                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-malachite underline underline-offset-4': pathname === '/services'})}
               >
                 Services
               </Link>
@@ -81,7 +81,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/about-us"
-                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-lima-400 underline underline-offset-4' : pathname === '/about-us'})}
+                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-malachite underline underline-offset-4' : pathname === '/about-us'})}
               >
                 About us
               </Link>
@@ -89,8 +89,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/contact"
-                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-lima-400 underline underline-offset-4 ' : pathname === '/contact'})}
-              >
+                className={clsx(`${ubuntu_sans.className} text-base leading-7 text-white hover:text-slate-gray cursor-pointer`,{'text-malachite underline underline-offset-4' : pathname === '/contact'})}>
                 Contact
               </Link>
             </li>

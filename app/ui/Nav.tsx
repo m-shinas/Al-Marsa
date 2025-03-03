@@ -24,7 +24,7 @@ const Nav = () => {
         </li>
       </ul>
       <div className="notch">
-        <Image src="/AL MARSA-logo.png" width={130} height={100} alt="Logo" />
+        <Image src="/AL-MARSA-logo.PNG" width={130} height={100} alt="Logo" />
       </div>
       <ul>
         <li className="list-none inline-block mx-[40px] ">

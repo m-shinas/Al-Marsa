@@ -16,7 +16,7 @@ export const services = [
         label: "Customs Clearance",
     },
     {
-        imgURL: "/warehouse.jpg",
+        imgURL: "/warehouse.JPG",
         label: "Warehouse",
     },
 ];

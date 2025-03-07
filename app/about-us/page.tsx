@@ -32,7 +32,7 @@ export default function Page() {
             </h2>
           </div>
           <p
-            className={`${ubuntu_sans.className} text-xl leading-8 text-black mb-6`}
+            className={`${ubuntu_sans.className} text-xl leading-8 text-white mb-6`}
           >
             We Al Marsa Services is a leading customs clearance and transportation company established on 2007 
             and now a trusted name in the world of freight forwarding. We have leading network all over

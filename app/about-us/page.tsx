@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ubuntu_sans } from "../ui/fonts";
 import Image from "next/image";
 import { Metadata } from "next";
-import AboutTab from "../ui/aboutTab";
+import AboutTab from "../ui/AboutTab";
 
 export const metadata: Metadata = {
   title: "About us",

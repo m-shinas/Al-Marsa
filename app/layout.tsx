@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { cairo } from "@/app/ui/fonts";
 import Nav from "./ui/Nav";
@@ -9,9 +9,17 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 export const metadata: Metadata = {
-  title: "AL MARSA",
-  description: "Customs clearance and Transportation services in Saudi Arabia",
+  title: {
+    template: '%s | Al Marsa',
+    default: 'Al Marsa Services',
+  },
+  description: "Customs clearance and Transportation service company in Saudi Arabia",
 };
+
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: 'white'
+}
 
 export default function RootLayout({
   children,

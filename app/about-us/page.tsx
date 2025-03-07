@@ -1,31 +1,15 @@
-"use client"
-
 import Link from "next/link";
 import { ubuntu_sans } from "../ui/fonts";
 import Image from "next/image";
-import { useState } from "react";
+import { Metadata } from "next";
+import AboutTab from "../ui/aboutTab";
 
-const tabs = [
-  {id: "tab1" , label: "Values"},
-  {id: "tab2" , label: "Mission"},
-  {id: "tab3" , label: "Vision"},
-]
-  
-const tabContent = {
-  tab1:(
-      "We are guided by our core values of integrity, reliability, and customer satisfaction. We strive to build long-term partnerships with our clients by providing transparent and efficient services."
-  ),
-  tab2: (
-     "Our mission is clear to provide seamless, reliable, and cost-effective logistics solutions, that empower businesses to thrive in the global market."
-  ),
-  tab3: (
-     "To empower businesses globally by providing exceptional, personalized logistics solutions that exceed expectations and foster long-term partnerships."
-  )
-}
-  
+export const metadata: Metadata = {
+  title: "About us",
+  description: "Al Marsa Services is a leading customs clearance and transportation company in Saudi Arabia",
+};
+
 export default function Page() {
-
-  const [activeTab, setActiveTab] = useState<string>("tab2")
 
   return (
     <main>
@@ -70,21 +54,7 @@ export default function Page() {
       
       <section className="values-section py-16 h-[60vh] place-content-center">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="flex justify-center items-center w-full">
-            <div className="flex flex-col border-r-2 text-white">
-              {tabs.map((tab) => (
-                <button key={tab.id} className={`text-xl px-10 py-6 font-bold ${activeTab === tab.id ? 'border-r-4 border-r-lima-400 text-fruit-salad-600': 'text-white hover:text-fruit-salad-600'}`}
-                  onClick={() => setActiveTab(tab.id)}>
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-            <div className="text-white text-center ml-4">
-              <p className={`${ubuntu_sans.className} text-lg w-[50vw]`}>
-                {tabContent[activeTab as keyof typeof tabContent]}
-              </p>
-            </div>
-          </div>
+          <AboutTab />
         </div>
       </section>
     </main>

@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color-scheme: light only;
 }
 
 .values-section {
@@ -33,59 +34,6 @@
   z-index: 2;
 }
 
-/************************
-    THE BURGER
-  ************************/
-.burger {
-  position: absolute;
-  top: 26px;
-  right: 20px;
-  height: 4px;
-  line-height: 0;
-  width: 44px;
-  background-color: white;
-  border-radius: 1px;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.burger::before,
-.burger::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 40px;
-  height: 0;
-  border: 2px solid white;
-  border-radius: 1px;
-  padding: 0;
-  margin: 0;
-  transition: all 0.3s linear;
-}
-.burger::before {
-  top: 0;
-  transform-origin: left center;
-  transform: translate(0, -16px) rotate(0deg);
-}
-.burger::after {
-  bottom: 0px;
-  transform-origin: right center;
-  transform: translate(0, 16px) rotate(0deg);
-}
-.expanded .burger {
-  background-color: transparent;
-  border-radius: 4px;
-}
-.expanded .burger::before {
-  transform: translate(6px, 16px) rotate(-45deg);
-  border-radius: 4px;
-}
-.expanded .burger::after {
-  transform: translate(-6px, 16px) rotate(45deg);
-  border-radius: 4px;
-}
 
 @layer components {
   .notch {
@@ -127,10 +75,3 @@
   }
 }
 
-/* --pigment-green: #1D9948ff;
---dark-pastel-green: #41B649ff;
---yellow-green: #81C341ff;
---davys-gray: #4F4C4Dff;
---gray: #7C7C7Dff; 
-
-*/

@@ -77,3 +77,22 @@ export const serviceListing = [
         description: "Expert handling of non-containerized cargo and liquid bulk shipments, providing specialized solutions for your unique cargo needs."
     }
 ]
+
+export const tabs = [
+    {id: "tab1" , label: "Values"},
+    {id: "tab2" , label: "Mission"},
+    {id: "tab3" , label: "Vision"},
+]
+
+export const tabContent = {
+  tab1:(
+      "We are guided by our core values of integrity, reliability, and customer satisfaction. We strive to build long-term partnerships with our clients by providing transparent and efficient services."
+  ),
+  tab2: (
+     "Our mission is clear to provide seamless, reliable, and cost-effective logistics solutions, that empower businesses to thrive in the global market."
+  ),
+  tab3: (
+     "To empower businesses globally by providing exceptional, personalized logistics solutions that exceed expectations and foster long-term partnerships."
+  )
+}
+

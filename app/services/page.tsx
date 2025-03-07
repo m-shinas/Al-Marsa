@@ -1,8 +1,13 @@
 import Link from "next/link";
 import { ubuntu_sans } from "../ui/fonts";
-import Image from "next/image";
 import { serviceListing } from "../lib/data";
 import ServiceCard from "../ui/ServiceCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: "Differnent services provided by Al Marsa Services",
+};
 
 export default function Page() {
   return (

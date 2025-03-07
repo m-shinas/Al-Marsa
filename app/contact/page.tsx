@@ -6,6 +6,12 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { ubuntu_sans } from "../ui/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact details of Al Marsa Services",
+};
 
 export default function Page() {
   return (

@@ -24,7 +24,7 @@ export default function Page() {
           <span>About Us</span>
         </div>
       </section>
-      <section className="about-section padding flex justify-between items-center max-lg:flex-col gap-10 w-full h-[70vh] ">
+      <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full about-section">
         <div className="flex flex-1 flex-col">
           <div className="border-l-4 border-lima-400 pl-4 mb-6">
             <h2 className="text-3xl font-medium text-fruit-salad-600">
@@ -41,7 +41,7 @@ export default function Page() {
           </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
-  
+          
         </div>
       </section>
       

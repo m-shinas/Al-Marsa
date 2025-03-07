@@ -27,11 +27,11 @@ export default function Home() {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <Image
-            src="/AllFreightModes.jpg"
-            width={550}
-            height={550}
-            alt="Hero"
-            className="object-contain"
+            src="/globe-map.png"
+            width={650}
+            height={600}
+            alt="Global map"
+            className="object-fill hover:drop-shadow-2xl"
           />
         </div>
       </section>

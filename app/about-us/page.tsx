@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ubuntu_sans } from "../ui/fonts";
-import Image from "next/image";
 import { Metadata } from "next";
 import AboutTab from "../ui/AboutTab";
 
@@ -42,13 +41,7 @@ export default function Page() {
           </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
-          {/* <Image
-            src="/globe-map.png"
-            width={600}
-            height={550}
-            alt="Hero"
-            className="object-fill drop-shadow-3xl hover:drop-shadow-4xl"
-          /> */}
+  
         </div>
       </section>
       

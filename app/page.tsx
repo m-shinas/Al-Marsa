@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
+      <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full">
         <div className="flex flex-1 flex-col">
           <h2 className="text-5xl capitalize font-bold lg:max-w-lg">
             Navigating <span className="text-fruit-salad-600">Global Trade,</span> <br />
@@ -27,11 +27,11 @@ export default function Home() {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <Image
-            src="/globe-map.png"
-            width={650}
+            src="/AllFreightModes.jpg"
+            width={550}
             height={600}
             alt="Global map"
-            className="object-fill hover:drop-shadow-2xl"
+            className="object-cover"
           />
         </div>
       </section>

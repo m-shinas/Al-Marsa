@@ -37,17 +37,17 @@ export default function Page() {
           >
             We Al Marsa Services is a leading customs clearance and transportation company established on 2007 
             and now a trusted name in the world of freight forwarding. We have leading network all over
-            the world, with our headquarter in Saudi Arabia. we understand the complexities of global 
+            the world, with our headquarters in Saudi Arabia. we understand the complexities of global 
             trade and are committed to delivering exceptional service to our clients by offering comprehensive and customized logistics solutions.
           </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
           <Image
-            src="/Al-MarsaTruck.png"
-            width={550}
+            src="/globe-map.png"
+            width={600}
             height={550}
             alt="Hero"
-            className="object-contain drop-shadow-3xl hover:drop-shadow-4xl"
+            className="object-fill drop-shadow-3xl hover:drop-shadow-4xl"
           />
         </div>
       </section>

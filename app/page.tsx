@@ -21,7 +21,7 @@ export default function Home() {
             compliance.
           </p>
           <p className={`${ubuntu_sans.className} mt-6 lg:max-w-lg info-text`}>
-            Whether you're shipping by sea, air, or land, Al Marsa is your trusted partner in logistics, dedicated to streamlining your 
+            Whether you are shipping by sea, air, or land, Al Marsa is your trusted partner in logistics, dedicated to streamlining your 
             supply chain and simplifying the complexities of international trade.
           </p>
         </div>

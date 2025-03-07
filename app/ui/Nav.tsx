@@ -21,7 +21,11 @@ const Nav = () => {
     }
   };
 
-  window.addEventListener("scroll", changeBackground);
+  if (typeof window !== "undefined") {
+    // Client-side-only code
+    window.addEventListener("scroll", changeBackground);
+  }
+  
 
   return (
     <header>

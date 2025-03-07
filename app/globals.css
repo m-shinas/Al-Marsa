@@ -10,8 +10,10 @@
   color-scheme: light only;
 }
 
-body {
-  color-scheme: light only;
+@supports (forced-colors: none) {
+  body {
+    forced-colors: none;
+  }
 }
 
 .values-section {

@@ -10,6 +10,10 @@
   color-scheme: light only;
 }
 
+body {
+  color-scheme: light only;
+}
+
 .values-section {
   background-image: url("/cargoShip.jpg");
   background-size: cover;

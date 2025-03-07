@@ -24,7 +24,7 @@ const Hero = () => (
         href="/contact"
         className={`${ubuntu_sans.className} inline-block text-[#fff] bg-gradient-to-r from-fruit-salad-600 to-lima-400 hover:from-fruit-salad-700 hover:to-lima-500 text-[24px]  py-[14px] px-[56px] rounded-[50px] mt-[20px] shadow-lg transition duration-300 ease-in-out transform hover:scale-105`}
       >
-        Connect us 
+        Connect us
       </Link>
     </div>
   </div>

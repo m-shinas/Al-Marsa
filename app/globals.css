@@ -9,9 +9,87 @@
   scroll-behavior: smooth;
 }
 
+.values-section {
+  background-image: url("/cargoShip.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.values-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.values-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/************************
+    THE BURGER
+  ************************/
+.burger {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  height: 4px;
+  line-height: 0;
+  width: 44px;
+  background-color: white;
+  border-radius: 1px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 0;
+  border: 2px solid white;
+  border-radius: 1px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s linear;
+}
+.burger::before {
+  top: 0;
+  transform-origin: left center;
+  transform: translate(0, -16px) rotate(0deg);
+}
+.burger::after {
+  bottom: 0px;
+  transform-origin: right center;
+  transform: translate(0, 16px) rotate(0deg);
+}
+.expanded .burger {
+  background-color: transparent;
+  border-radius: 4px;
+}
+.expanded .burger::before {
+  transform: translate(6px, 16px) rotate(-45deg);
+  border-radius: 4px;
+}
+.expanded .burger::after {
+  transform: translate(-6px, 16px) rotate(45deg);
+  border-radius: 4px;
+}
+
 @layer components {
   .notch {
-    @apply relative w-[25%] bg-white flex justify-center rounded-bl-[50px] rounded-br-[50px] z-[10] before:content-[''] before:absolute before:w-[50px] before:h-[50px] before:bg-transparent before:top-0 before:left-[-50px] before:rounded-tr-[50px] before:shadow-[15px_-15px_0_15px_#fff] after:content-[''] after:absolute after:w-[50px] after:h-[50px] after:bg-transparent after:top-0 after:right-[-50px] after:rounded-tl-[50px] after:shadow-[-15px_-15px_0_15px_#fff];
+    @apply hidden md:flex relative w-[25%] bg-white justify-center rounded-bl-[50px] rounded-br-[50px] z-[10] before:content-[''] before:absolute before:w-[50px] before:h-[50px] before:bg-transparent before:top-0 before:left-[-50px] before:rounded-tr-[50px] before:shadow-[15px_-15px_0_15px_#fff] after:content-[''] after:absolute after:w-[50px] after:h-[50px] after:bg-transparent after:top-0 after:right-[-50px] after:rounded-tl-[50px] after:shadow-[-15px_-15px_0_15px_#fff];
   }
 
   .max-container {
@@ -20,7 +98,6 @@
 }
 
 @layer utilities {
-
   .padding {
     @apply sm:px-16 px-8 sm:py-16 py-12;
   }
@@ -41,13 +118,12 @@
     @apply sm:pr-16 pr-8;
   }
 
-
   .padding-b {
     @apply sm:pb-24 pb-12;
   }
 
   .info-text {
-    @apply  text-slate-gray text-lg leading-7;
+    @apply text-slate-gray text-lg leading-7;
   }
 }
 

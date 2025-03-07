@@ -40,10 +40,10 @@ export default {
         "snow-flurry": "#e6ffda",
       },
       dropShadow: {
-        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '3xl': '0 35px 35px rgba(29, 153, 72, 0.35)',
         '4xl': [
-            '0 35px 35px rgba(0, 0, 0, 0.25)',
-            '0 45px 65px rgba(0, 0, 0, 0.15)'
+            '0 35px 35px rgba(29, 153, 72, 0.45)',
+            '0 45px 65px rgba(29, 153, 72, 0.25)'
         ]
       },
       backgroundImage: {

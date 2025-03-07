@@ -48,7 +48,6 @@ export default {
       },
       backgroundImage: {
         'hero': "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(/containerTruckBanner.jpg)",
-        'section-bg': "url(/globe-map.png)",
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'

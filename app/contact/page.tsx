@@ -27,7 +27,7 @@ export default function Page() {
         </div>
       </section>
       <section className="max-w-[1320px] my-0 mx-auto py-0 px-4 text-center">
-        <span className="text-4xl font-semibold py-4 relative top-12 bg-white ">
+        <span className="text-4xl font-semibold py-4 px-4 relative top-12 bg-white rounded-lg ">
           Get in Touch with Us
         </span>
         <div

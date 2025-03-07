@@ -25,15 +25,15 @@ export default function Page() {
           <span>About Us</span>
         </div>
       </section>
-      <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full bg-snow-flurry">
+      <section className="about-section padding flex justify-between items-center max-lg:flex-col gap-10 w-full h-[70vh] ">
         <div className="flex flex-1 flex-col">
           <div className="border-l-4 border-lima-400 pl-4 mb-6">
-            <h2 className="text-3xl  font-medium text-fruit-salad-600">
+            <h2 className="text-3xl font-medium text-fruit-salad-600">
               Who we are
             </h2>
           </div>
           <p
-            className={`${ubuntu_sans.className} text-xl leading-8 text-slate-gray mb-6`}
+            className={`${ubuntu_sans.className} text-xl leading-8 text-black mb-6`}
           >
             We Al Marsa Services is a leading customs clearance and transportation company established on 2007 
             and now a trusted name in the world of freight forwarding. We have leading network all over
@@ -42,13 +42,13 @@ export default function Page() {
           </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
-          <Image
+          {/* <Image
             src="/globe-map.png"
             width={600}
             height={550}
             alt="Hero"
             className="object-fill drop-shadow-3xl hover:drop-shadow-4xl"
-          />
+          /> */}
         </div>
       </section>
       

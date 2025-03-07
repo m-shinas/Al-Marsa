@@ -81,7 +81,7 @@ const Nav = () => {
         </ul>
       </nav>
 
-       <nav className="md:hidden flex w-full justify-between items-center fixed z-10 px-6 py-4 bg-white drop-shadow-md">
+       <nav className="md:hidden flex w-full justify-between items-center fixed z-10 px-4 py-2 bg-white drop-shadow-md">
          <Link href="/">
            <Image
             alt="logo-alMarsa"
@@ -92,7 +92,7 @@ const Nav = () => {
         </Link>
         
         <div className="text-5xl cursor-pointer border-l p-2" onClick={() => setIsMenuOpened(!isMenuOpened)}>
-          {isMenuOpened ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+          {isMenuOpened ? <FontAwesomeIcon icon={faXmark} /> :  <FontAwesomeIcon icon={faBars} /> }
         </div>
         <div className={`${isMenuOpened ? 'absolute top-20 left-0 w-full bg-white flex flex-col items-center gap-6 text-lg transform transition duration-300 ease-in' : 'hidden'}`}>
           <ul className="w-full text-center text-base">
@@ -114,9 +114,6 @@ const Nav = () => {
       </nav>
     
     </header>
-      
-
-      
   );
 };
 

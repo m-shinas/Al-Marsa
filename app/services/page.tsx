@@ -7,6 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services",
   description: "Differnent services provided by Al Marsa Services",
+  keywords: ["Supply Chain Optimization", "Handling of Household Goods", "Break Bulk / ISO Tank", "FCL/LCL", "Freight Forwarding", "Project Cargo handling", "Documentation", "Warehousing & Distribution", "Sea Freight", "Land Freight", "Air Freight"],
 };
 
 export default function Page() {

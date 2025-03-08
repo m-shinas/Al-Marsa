@@ -5,15 +5,18 @@ import Nav from "./ui/Nav";
 import Footer from "./ui/Footer";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import ScrollToTop from "./ui/ScrollToTop";
+import WhatsappBtn from "./ui/WhatsappBtn";
 
 config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: {
     template: '%s | Al Marsa',
-    default: 'Al Marsa Services',
+    default: 'Home | Al Marsa',
   },
   description: "Customs clearance and Transportation service company in Saudi Arabia",
+  keywords: ["Customs Clearance", "Transportation", "Saudi Arabia", "Al Marsa Services", "logistics services", "Global Trade"],
 };
 
 export const viewport: Viewport = {
@@ -33,6 +36,8 @@ export default function RootLayout({
       >
         <Nav />
         {children}
+        <WhatsappBtn />
+        <ScrollToTop />
         <Footer />
       </body>
     </html>

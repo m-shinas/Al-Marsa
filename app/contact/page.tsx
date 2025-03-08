@@ -11,6 +11,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact details of Al Marsa Services",
+  keywords: ["Contact", "Saudi Arabia", "Phone", "Email", "Address"],
 };
 
 export default function Page() {

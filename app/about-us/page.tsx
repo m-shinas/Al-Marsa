@@ -6,6 +6,7 @@ import AboutTab from "../ui/AboutTab";
 export const metadata: Metadata = {
   title: "About us",
   description: "Al Marsa Services is a leading customs clearance and transportation company in Saudi Arabia",
+  keywords: ["About us", "Vision", "Mission", "Values", "Company Profile"],
 };
 
 export default function Page() {
@@ -24,15 +25,15 @@ export default function Page() {
           <span>About Us</span>
         </div>
       </section>
-      <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full about-section">
-        <div className="flex flex-1 flex-col">
+      <section className="flex justify-between items-center max-lg:flex-col w-full about-section">
+        <div className="padding mx-16 flex flex-1 flex-col who-we-are border-y-2 border-y-lima-400 ">
           <div className="border-l-4 border-lima-400 pl-4 mb-6">
             <h2 className="text-3xl font-medium text-fruit-salad-600">
               Who we are
             </h2>
           </div>
           <p
-            className={`${ubuntu_sans.className} text-xl leading-8 text-black mb-6`}
+            className={`${ubuntu_sans.className} text-xl leading-8 text-white mb-6`}
           >
             We Al Marsa Services is a leading customs clearance and transportation company established on 2007 
             and now a trusted name in the world of freight forwarding. We have leading network all over
@@ -45,7 +46,7 @@ export default function Page() {
         </div>
       </section>
       
-      <section className="values-section py-16 h-[60vh] place-content-center">
+      <section className="values-section py-16 place-content-center">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <AboutTab />
         </div>

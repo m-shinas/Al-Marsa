@@ -28,12 +28,12 @@ export default function Page() {
       <section className="flex justify-between items-center max-lg:flex-col w-full about-section">
         <div className="padding mx-16 flex flex-1 flex-col who-we-are border-y-2 border-y-lima-400 ">
           <div className="border-l-4 border-lima-400 pl-4 mb-6">
-            <h2 className="text-3xl font-medium text-fruit-salad-600">
+            <h2 className="text-2xl sm:text-3xl font-medium text-fruit-salad-600">
               Who we are
             </h2>
           </div>
           <p
-            className={`${ubuntu_sans.className} text-xl leading-8 text-white mb-6`}
+            className={`${ubuntu_sans.className} text-base sm:text-xl leading-8 text-white mb-6`}
           >
             We Al Marsa Services is a leading customs clearance and transportation company established on 2007 
             and now a trusted name in the world of freight forwarding. We have leading network all over

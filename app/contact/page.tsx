@@ -28,11 +28,11 @@ export default function Page() {
         </div>
       </section>
       <section className="max-w-[1320px] my-0 mx-auto py-0 px-4 text-center">
-        <span className="text-4xl font-semibold py-4 px-4 relative top-12 bg-white rounded-lg ">
+        <span className="text-4xl font-semibold py-4 relative top-12 bg-white rounded-lg">
           Get in Touch with Us
         </span>
         <div
-          className={`${ubuntu_sans.className} flex max-lg:flex-col justify-around items-center text-center my-8 mx-0 py-8 px-0 rounded-[20px] shadow-3xl`}
+          className={`${ubuntu_sans.className} flex max-lg:flex-col justify-around items-center text-center my-8 mx-0 py-8 px-0 border border-fruit-salad-500 rounded-[20px] shadow-3xl`}
         >
           <div className="my-3 mx-0 p-4">
             <span className="block">

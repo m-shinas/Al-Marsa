@@ -12,7 +12,7 @@ const Nav = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    isMenuOpened && setIsMenuOpened(false);
+    setIsMenuOpened(false);
   }, [pathname])
   
 

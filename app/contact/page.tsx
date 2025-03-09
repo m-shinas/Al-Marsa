@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main>
-      <section className="h-[60vh] bg-hero bg-no-repeat bg-cover bg-bottom flex flex-col justify-center items-center text-center text-white">
+      <section className="h-[60vh] w-full bg-hero bg-no-repeat bg-cover bg-bottom flex flex-col justify-center items-center text-center text-white">
         <h1 className="text-5xl uppercase py-2 tracking-[2px] mb-4">Contact</h1>
         <div className={`${ubuntu_sans.className} text-sm`}>
           <Link href="/" className="hover:text-slate-gray">
@@ -28,7 +28,7 @@ export default function Page() {
         </div>
       </section>
       <section className="max-w-[1320px] my-0 mx-auto py-0 px-4 text-center">
-        <span className="text-4xl font-semibold py-4 relative top-12 bg-white rounded-lg">
+        <span className="text-2xl sm:text-4xl font-semibold py-4 relative top-12 bg-white rounded-lg">
           Get in Touch with Us
         </span>
         <div

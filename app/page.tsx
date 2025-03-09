@@ -35,8 +35,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-snow-flurry padding-x py-10">
-        <h2 className="text-center text-5xl font-bold">
+      <section className="bg-snow-flurry padding-x py-10 w-full">
+        <h2 className="text-center text-4xl sm:text-5xl font-bold">
           Customs Clearance & Transportation Services
         </h2>
         <p className={`${ubuntu_sans.className} info-text m-auto mt-4 max-w-lg text-center`}>

@@ -1,7 +1,5 @@
 "use client";
 
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -81,36 +79,50 @@ const Nav = () => {
         </ul>
       </nav>
 
-       <nav className="md:hidden flex w-full justify-between items-center fixed z-10 px-4 py-2 bg-white drop-shadow-md">
-         <Link href="/">
-           <Image
-            alt="logo-alMarsa"
-            src="/AL-MARSA-horizontal.png"
-            width={208}
-            height={60}
-          />
-        </Link>
-        
-        <div className="text-5xl cursor-pointer border-l p-2" onClick={() => setIsMenuOpened(!isMenuOpened)}>
-          {isMenuOpened ? <FontAwesomeIcon icon={faXmark} /> :  <FontAwesomeIcon icon={faBars} /> }
-        </div>
-        <div className={`${isMenuOpened ? 'absolute top-20 left-0 w-full bg-white flex flex-col items-center gap-6 text-lg transform transition duration-300 ease-in' : 'hidden'}`}>
-          <ul className="w-full text-center text-base">
-            <li className={`m-4 hover:text-fruit-salad-400 border-b ${pathname === '/' && 'text-fruit-salad-400'}`}>
-              <Link href="/">Home</Link>
-            </li>
-            <li className={`m-4 hover:text-fruit-salad-400 border-b ${pathname === '/services' && 'text-fruit-salad-400'}`}>
-              <Link href='/services'> Services</Link>
-            </li>
-            
-            <li className={`m-4 hover:text-fruit-salad-400 border-b ${pathname === '/about-us' && 'text-fruit-salad-400'}`}>
-              <Link href='/about-us'>About us</Link>
-            </li>
-            
-            <li className={`m-4 hover:text-fruit-salad-400  ${pathname === '/contact' && 'text-fruit-salad-400'}`}>
-              <Link href='/contact'>Contact</Link></li>
-          </ul>
-        </div>
+      <nav className={`md:hidden fixed top-0 left-0 w-full z-20 bg-white shadow-xl`}>
+          <div className="px-6">
+            <div className="flex items-center justify-between">
+              <div className="relative z-20">
+                <Link href="/">
+                  <Image
+                    alt="logo-alMarsa"
+                    src="/AL-MARSA-horizontal.png"
+                    width={208}
+                    height={60}
+                  />
+                </Link>
+              </div>
+              <div className="flex items-center justify-end border-l ">
+                <div className={`${isMenuOpened && 'hamburger'} z-20 p-6 -mr-6 cursor-pointer relative`} onClick={() => setIsMenuOpened(!isMenuOpened)}>
+                  <div aria-hidden="true" className="m-auto h-0.5 mt-1 w-6 rounded bg-black transition duration-300"></div>
+                  <div aria-hidden="true" className="m-auto h-0.5 mt-1 w-6 rounded bg-black transition duration-300"></div>
+                  <div aria-hidden="true" className="m-auto h-0.5 mt-1 w-6 rounded bg-black transition duration-300"></div>
+                </div>
+                <div className={`${isMenuOpened ? 'translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] bg-white border-r shadow-xl transition duration-300' : 'fixed inset-0 w-[calc(100%-4.5rem)] bg-white border-r shadow-xl transition duration-300 translate-x-[-100%]'} `} >
+                  <div className="flex flex-col h-full">
+                    <ul className="px-8 pt-20 space-y-4">
+                      <li className={` hover:text-fruit-salad-400  ${pathname === '/' && 'text-fruit-salad-400'}`}>
+                        <Link href="/">Home</Link>
+                      </li>
+                      <hr />
+                      <li className={` hover:text-fruit-salad-400  ${pathname === '/services' && 'text-fruit-salad-400'}`}>
+                        <Link href='/services'> Services</Link>
+                      </li>
+                      <hr />
+                      <li className={` hover:text-fruit-salad-400  ${pathname === '/about-us' && 'text-fruit-salad-400'}`}>
+                        <Link href='/about-us'>About us</Link>
+                      </li>
+                      <hr />
+                      <li className={` hover:text-fruit-salad-400  ${pathname === '/contact' && 'text-fruit-salad-400'}`}>
+                        <Link href='/contact'>Contact</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
       </nav>
     
     </header>

@@ -66,9 +66,22 @@
 }
 
 
+
 @layer components {
   .notch {
     @apply hidden md:flex relative w-[25%] bg-white justify-center rounded-bl-[50px] rounded-br-[50px] z-[10] before:content-[''] before:absolute before:w-[50px] before:h-[50px] before:bg-transparent before:top-0 before:left-[-50px] before:rounded-tr-[50px] before:shadow-[15px_-15px_0_15px_#fff] after:content-[''] after:absolute after:w-[50px] after:h-[50px] after:bg-transparent after:top-0 after:right-[-50px] after:rounded-tl-[50px] after:shadow-[-15px_-15px_0_15px_#fff];
+  }
+
+  .hamburger div:first-child{
+    @apply rotate-45 translate-y-2;
+  }
+  
+  .hamburger div:nth-child(2){
+    @apply translate-x-2 opacity-0;
+  }
+  
+  .hamburger div:last-child{
+    @apply -rotate-45 -translate-y-[3.5px];
   }
 
   .max-container {

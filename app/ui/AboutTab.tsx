@@ -24,7 +24,7 @@ const AboutTab = () => {
         ))}
       </div>
       <div className="text-white text-center ml-4">
-        <p className={`${ubuntu_sans.className} text-lg w-[50vw]`}>
+        <p className={`${ubuntu_sans.className} text-base sm:text-lg w-[50vw]`}>
           {tabContent[activeTab as keyof typeof tabContent]}
         </p>
       </div>

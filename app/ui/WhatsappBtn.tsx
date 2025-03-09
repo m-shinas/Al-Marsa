@@ -3,12 +3,12 @@ import React from "react";
 
 const WhatsappBtn = () => {
   return (
-    <span className="fixed bottom-6 left-5 z-20 w-8 h-8 md:w-12 md:h-12 rounded-full transform hover:scale-110 transition duration-300 ease-in">
+    <span className="fixed bottom-6 left-5 z-20 w-9 h-9 md:w-12 md:h-12 rounded-full transform hover:scale-110 transition duration-300 ease-in">
       <span className="animate-ping absolute h-full w-full rounded-full bg-[#25d366] opacity-75"></span>
       <Link
         href="https://api.whatsapp.com/send?phone=966549734590"
         target="_blank"
-        className="relative flex justify-center items-center bg-[#25d366] rounded-full w-8 h-8 md:w-12 md:h-12"
+        className="relative flex justify-center items-center bg-[#25d366] rounded-full w-9 h-9 md:w-12 md:h-12"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

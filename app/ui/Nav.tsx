@@ -4,12 +4,17 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    isMenuOpened && setIsMenuOpened(false);
+  }, [pathname])
+  
 
   const changeBackground = () => {
     if (window.scrollY >= 200) {
@@ -80,7 +85,7 @@ const Nav = () => {
       </nav>
 
       <nav className={`md:hidden fixed top-0 left-0 w-full z-20 bg-white shadow-xl`}>
-          <div className="px-6">
+          <div className="pr-6 pl-3">
             <div className="flex items-center justify-between">
               <div className="relative z-20">
                 <Link href="/">
@@ -122,7 +127,6 @@ const Nav = () => {
               </div>
             </div>
           </div>
-
       </nav>
     
     </header>

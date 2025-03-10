@@ -86,7 +86,7 @@ export const tabs = [
 
 export const tabContent = {
   tab1:(
-      "We are guided by our core values of integrity, reliability, and customer satisfaction. We strive to build long-term partnerships with our clients by providing transparent and efficient services."
+      "Our core values of integrity, reliability, and innovation drive every decision we make."
   ),
   tab2: (
      "Our mission is clear to provide seamless, reliable, and cost-effective logistics solutions, that empower businesses to thrive in the global market."

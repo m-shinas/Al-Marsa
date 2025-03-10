@@ -15,7 +15,6 @@ const Nav = () => {
     setIsMenuOpened(false);
   }, [pathname])
   
-
   const changeBackground = () => {
     if (window.scrollY >= 200) {
       setNavbar(true);
@@ -29,7 +28,6 @@ const Nav = () => {
     window.addEventListener("scroll", changeBackground);
   }
   
-
   return (
     <header>
         <nav

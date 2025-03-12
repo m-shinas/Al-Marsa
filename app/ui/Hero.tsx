@@ -8,7 +8,6 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => (
   <div className="relative w-full h-screen bg-gradient-to-b from-[#0c0333]/30 to-[#0c0333]/30 py-0 px-[5%] flex items-center justify-center">
     <Suspense fallback={<FontAwesomeIcon icon={faSpinner} spinPulse color="#fff" size="4x"/>}>
-      {/* <VideoComponent fileName="al-marsa-hero-NjgB5KXyQ4vcJkVSTJWMiYOPyn1Fjo.mp4" /> */}
       <video
         autoPlay
         loop

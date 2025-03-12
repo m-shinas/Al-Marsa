@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  description: "Customs clearance and Transportation service company in Saudi Arabia",
+  description: "Al Marsa provides all kind of cargo by sea, air & land. Door to Door, Import and Export Services all over Saudi Arabia",
   keywords: ["Customs Clearance", "Transportation", "Saudi Arabia", "Al Marsa Services", "logistics services", "Global Trade"],
 };
 

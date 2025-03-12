@@ -5,7 +5,7 @@ import AboutTab from "../ui/AboutTab";
 
 export const metadata: Metadata = {
   title: "About us",
-  description: "Al Marsa Services is a leading Freight forwarding company in Saudi Arabia",
+  description: "We Al Marsa Services established on 2007 and trusted name in the world of freight forwarding. We have a global network headquartered in Saudi Arabia.",
   keywords: ["About us", "Vision", "Mission", "Values", "Company Profile"],
 };
 

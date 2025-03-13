@@ -12,8 +12,8 @@ config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Al Marsa',
-    default: 'Home | Al Marsa',
+    template: '%s | Al Marsa Services',
+    default: 'Home | Al Marsa Services',
   },
   robots: {
     index: true,

@@ -22,11 +22,11 @@ const Hero = () => (
     </Suspense>
     
     <div className="text-center">
-      <h1 className={`${ubuntu_sans.className} text-5xl md:text-6xl lg:text-7xl text-white font-bold transition duration-500 ease-in-out hover:[-webkit-text-stroke:1px_#fff] hover:text-transparent`}>Experience <br /> Seamless Shipping
+      <h1 className={`${ubuntu_sans.className} no-select text-5xl md:text-6xl lg:text-7xl text-white font-bold transition duration-500 ease-in-out hover:[-webkit-text-stroke:1px_#fff] hover:text-transparent`}>Experience <br /> Seamless Shipping
       <br /> & Boundless Solutions</h1>
       <Link
         href="/contact"
-        className={`${ubuntu_sans.className} inline-block text-[#fff] bg-gradient-to-r from-fruit-salad-600 to-lima-400 hover:from-fruit-salad-700 hover:to-lima-500 text-[24px] py-[14px] px-[56px] rounded-[50px] mt-[20px] shadow-lg transition duration-300 ease-in-out transform hover:scale-105`}
+        className={`${ubuntu_sans.className} inline-block text-center text-[#fff] bg-gradient-to-r from-fruit-salad-600 to-lima-400 hover:from-fruit-salad-700 hover:to-lima-500 text-[24px] py-[14px] px-[56px] rounded-[50px] mt-[20px] shadow-lg transition duration-300 ease-in-out transform hover:scale-105`}
       >
         Connect us
       </Link>

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "About us",
   description: "We Al Marsa Services established on 2007 and trusted name in the world of freight forwarding. We have a global network headquartered in Saudi Arabia.",
   keywords: ["About us", "Vision", "Mission", "Values", "Company Profile"],
+  alternates: {
+    canonical: "/about-us",
+  }
 };
 
 export default function Page() {

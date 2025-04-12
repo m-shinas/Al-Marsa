@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Al Marsa Services',
     default: 'Home | Al Marsa Services',
   },
+  metadataBase: new URL('https://www.almarsacc.com'),
   robots: {
     index: true,
     follow: true,
@@ -30,6 +31,12 @@ export const metadata: Metadata = {
   },
   description: "Al Marsa provides all kind of cargo by sea, air & land. Door to Door, Import and Export Services all over Saudi Arabia",
   keywords: ["Customs Clearance", "Transportation", "Saudi Arabia", "Al Marsa Services", "logistics services", "Global Trade"],
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en': 'https://www.almarsacc.com',
+    }
+  }
 };
 
 export const viewport: Viewport = {

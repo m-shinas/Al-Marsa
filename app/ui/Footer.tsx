@@ -198,7 +198,7 @@ const Footer = () => {
       <div
         className={`${ubuntu_sans.className} bg-[#242323] text-sm text-opacity-60 py-6 text-center text-white`}
       >
-        <p>Al Marsa © Copyright {presentYear}. All Rights Reserved.</p>
+        <p>Al Marsa © Copyright {presentYear}. All Rights Reserved. &nbsp; <span className="border-l px-2 border-white">Designed by Nexaura Innovations</span></p>
       </div>
     </footer>
   );

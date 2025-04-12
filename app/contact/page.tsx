@@ -11,7 +11,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Our head office address- P.O. Box 35028 - Dammam, 31488 Kingdom of Saudi Arabia. Contact Us +966 54 973 4590, Email us at marketing@almarsacc.com",
-  keywords: ["Contact", "Saudi Arabia", "Phone", "Email", "Address"],
+  keywords: ["Contact", "Saudi Arabia", "Phone", "Email", "Address", "Map", "Location"],
+  alternates: {
+    canonical: "/contact",
+  }
 };
 
 export default function Page() {

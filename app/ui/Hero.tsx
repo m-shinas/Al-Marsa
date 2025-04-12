@@ -22,7 +22,7 @@ const Hero = () => (
     </Suspense>
     
     <div className="text-center">
-      <h1 className={`${ubuntu_sans.className} no-select text-5xl md:text-6xl lg:text-7xl text-white font-bold transition duration-500 ease-in-out hover:[-webkit-text-stroke:1px_#fff] hover:text-transparent`}>Experience <br /> Seamless Shipping
+      <h1 className={`${ubuntu_sans.className} no-select text-5xl md:text-6xl lg:text-7xl text-white font-bold transition duration-500 ease-out hover:[-webkit-text-stroke:1px_#fff] hover:text-transparent`}>Experience <br /> Seamless Shipping
       <br /> & Boundless Solutions</h1>
       <Link
         href="/contact"
